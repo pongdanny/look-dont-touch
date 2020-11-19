@@ -1,12 +1,12 @@
 import React from "react";
+import GalleryNavigation from './GalleryNavigation'
 
-const Gallery = (galleries) => {
-  console.log(galleries);
+
+const Gallery = ({galleries}) => {
+  console.log(galleries)
   return (
     <>
-      {galleries.galleries.map((gallery) => (
-        <li key={gallery}>{gallery}</li>
-      ))}
+      <GalleryNavigation galleries={galleries} />
     </>
   );
 };
